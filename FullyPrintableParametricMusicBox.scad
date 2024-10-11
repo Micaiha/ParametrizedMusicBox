@@ -50,7 +50,7 @@ GENERATE_CRANK=1; // [1:yes, 0:no]
 GENERATE_PULLEY=1; // [1:yes, 0:no]
 
 // this text will be put on top of the music cylinder
-MusicCylinderName="test song";
+MusicCylinderName="My lighthouse";
 // What font do you want to use for the text?
 MusicCylinderNameFont="write/Letters.dxf"; //["write/Letters.dxf":Basic,"write/orbitron.dxf":Futuristic,"write/BlackRose.dxf":Fancy]
 // how large should the font be
@@ -64,16 +64,16 @@ MusicCylinderNamePosition=0; // [0:top, 1:bottom]
 wall=2;
 
 // how many vibrating teeth should there be? (also number of available notes) You can use the output of the generator for this field: http://www.wizards23.net/projects/musicbox/musicbox.html
-pinNrX = 13;
+pinNrX = 6;
 
 // what should the notes on the teeth be? Each note is encoded by 3 characters: note (C,D,E,F,G,A,B), then the accidental (#, b or blank), and then the a one digit octave. You can use the output of the generator for this field: http://www.wizards23.net/projects/musicbox/musicbox.html
-teethNotes="C 0C#0D 0D#0E 0F 0F#0G 0G#0A 0A#0B 0C 1C#1D 1D#1E 1F 1";
+teethNotes="C 1D 2E 2G 2A 2B 2";
 
 // how many time slots should there be? (If you make this much higher you should also increase musicCylinderTeeth) You can use the output of the generator for this field: http://www.wizards23.net/projects/musicbox/musicbox.html
-pinNrY = 35;
+pinNrY = 60;
 
 // the actual song. each time slot has pinNrX characters. X marks a pin everything else means no pin. You can use the output of the generator for this field: http://www.wizards23.net/projects/musicbox/musicbox.html
-pins="XoooooooooooooXoooooooooooooXoooooooooooooXoooooooooooooXoooooooooooooXoooooooooooooXoooooooooooooXoooooooooooooXoooooooooooooXoooooooooooooXoooooooooooooXoooooooooooooXoooooooooooooXoooXooXoooooooooooooooooooXoooXooXoooooooooooooooooooXoooXooXoooooooooooooooooooXoooXooXoooooooooooooooooooXoooXooXoooooooooooooooooooXoooXooXoooooooooooooXooXoooXoooooooooooooooooooXooXoooXoooooooooooooooooooXooXoooXoooooooooooooooooooXooXoooXoooooooooooooooooooXooXoooXoooooooooooooooooooXooXoooX";
+pins="XooooooooooooXooooooooooooXooooooXooooooooXoooooooooXooooooooooXooooooooooXoooooooooooooooooooXooooooooooXoooooooooooXooooXoooooooooXooooooXooooooooooooXooooooooooXooooooooooooooooXooooooooooooXooooooooooooXooooooXooooooooooooooooooXooooooooooXooooooooooXoooooooooooooooooooXoooooXooooooXoooXooooooooXoooooooXooooXooooooooooooooooXoooooXooooooooooooooooooooooo";
 
 // the number of teeth on the music cylinder
 musicCylinderTeeth = 24;
